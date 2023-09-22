@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --main-color: #d3ad7f;
+    --black: rgb(0, 70, 133);
+    --bg: rgb(0, 70, 133);
+    --border: .1rem solid rgba(255, 255, 255, .3);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body {
+    background: var(--bg);
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+
+.heading {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+
+
+.btn a:hover {
+    color: white;
+}
+
+.header {
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    height: 6rem;
+}
+
+.header .navbar a {
+    margin: 0 2rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.header .icons div {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover {
+    color: var(--main-color);
+}
+
+#menu-btn {
+    display: none;
+}
+
+.header .social {
+    padding: 1rem 0;
+}
+
+.header .social a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    border: var(--border);
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+
+.header .social a:hover {
+    background-color: var(--main-color);
+}
+
+
+
+
+#organigrammes-btn {
+    display: none;
+}
+
+.header .search-form {
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.header .search-form.active {
+    transform: scaleY(1);
+}
+
+.header .search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem;
+    text-transform: none;
+}
+
+.header .search-form label {
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--black);
+}
+
+.header .search-form label:hover {
+    color: var(--main-color);
+}
+
+/* charte starts */
+
+.charte {
+    min-height: 100vh;
+    margin-top: 10rem;
+}
+
+.charte .row {
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+
+.charte .row .image {
+    flex: 1 1 45rem;
+}
+
+.charte .row .image img {
+    width: 100%;
+}
+
+.charte .row .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.charte .row .content h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.charte .row .content p {
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+/* charte ends */
+
+/* organigramme starts */
+.organigrammes {
+    min-height: 100vh;
+}
+
+.organigrammes .box-container {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+    gap: 1.5rem;
+}
+
+.organigrammes .box-container .box {
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.organigrammes .box-container .box img {
+    max-width: 100%;
+}
+
+.organigrammes .box-container .box:hover {
+    background: #fff;
+    color: var(--black);
+}
+
+.organigrammes .box-container .box:hover>* {
+    color: var(--black);
+}
+
+/* organigramme ends */
+
+
+/* Style des div contenant les logos */
+.logopart {
+    width: 15rem;
+    /* Vous pouvez ajuster la largeur en fonction de vos besoins */
+    padding: 5px;
+}
+
+/* Style des images (logos) pour les rendre entièrement responsives */
+.logopart img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* dirigeants starts */
+
+.dirigeants {
+    min-height: 100vh;
+}
+
+.dirigeants h1 {
+    padding: 3rem;
+}
+
+.dirigeants .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.dirigeants .box-container .box {
+    border: var(--border);
+    text-align: center;
+}
+
+.dirigeants .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.dirigeants .box-container .box .image img {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.dirigeants .box-container .box:hover .image img {
+    transform: scale(1.2);
+}
+
+.dirigeants .box-container .box .content {
+    padding: 2rem;
+}
+
+.dirigeants .box-container .box .content .title {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+}
+
+.dirigeants .box-container .box .content .title:hover {
+    color: var(--main-color);
+}
+
+.dirigeants .box-container .box .content span {
+    color: var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.dirigeants .box-container .box .content p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 1rem 0;
+}
+
+/* dirigeants ends */
+
+/* educateurs starts */
+
+.educateurs {
+    min-height: 100vh;
+}
+
+.educateurs h1 {
+    padding: 3rem;
+}
+
+.educateurs .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.educateurs .box-container .box {
+    border: var(--border);
+    text-align: center;
+}
+
+.educateurs .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.educateurs .box-container .box .image img {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.educateurs .box-container .box:hover .image img {
+    transform: scale(1.2);
+}
+
+.educateurs .box-container .box .content {
+    padding: 2rem;
+}
+
+.educateurs .box-container .box .content .title {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+}
+
+.educateurs .box-container .box .content .title:hover {
+    color: var(--main-color);
+}
+
+.educateurs .box-container .box .content span {
+    color: var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.educateurs .box-container .box .content p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 1rem 0;
+}
+
+/* educateurs ends */
+
+/* arbitres starts */
+
+.arbitres {
+    min-height: 100vh;
+}
+
+.arbitres h1 {
+    padding: 3rem;
+}
+
+.arbitres .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.arbitres .box-container .box {
+    border: var(--border);
+    text-align: center;
+}
+
+.arbitres .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.arbitres .box-container .box .image img {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.arbitres .box-container .box:hover .image img {
+    transform: scale(1.2);
+}
+
+.arbitres .box-container .box .content {
+    padding: 2rem;
+}
+
+.arbitres .box-container .box .content .title {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+}
+
+.arbitres .box-container .box .content .title:hover {
+    color: var(--main-color);
+}
+
+.arbitres .box-container .box .content span {
+    color: var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.arbitres .box-container .box .content p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 1rem 0;
+}
+
+/* arbitres ends */
+
+
+.footer {
+    background: var(--black);
+    text-align: center;
+}
+
+.footer .social {
+    padding: 1rem 0;
+}
+
+.footer .social a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--border);
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+.footer .social a:hover {
+    background-color: var(--main-color);
+}
+
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a {
+    padding: .7rem 2rem;
+    color: #fff;
+    border: var(--border);
+    font-size: 2rem;
+}
+
+.footer .links a:hover {
+    background: var(--main-color);
+}
+
+.footer .credit {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+.footer .credit span {
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+@media (max-width:991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active {
+        right: 0;
+    }
+
+    .header .navbar a {
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    .header .search-form {
+        width: 90%;
+        right: 2rem;
+    }
+
+    .accueil {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .accueil .content h3 {
+        font-size: 4.5rem;
+    }
+
+    .accueil .content p {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+}

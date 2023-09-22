@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* Masquer l'attribution Leaflet */
+        .leaflet-control-attribution {
+            display: none;
+        }
+    </style>
+    <style>
+        /* Masquer les boutons de zoom */
+        .leaflet-control-zoom {
+            display: none;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US VENDÔME FOOTBALL CLUB</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- Carte interactive-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css file  -->
+    <link rel="stylesheet" href="css/styleleclub.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="images/usvbanner.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html">Accueil</a>
+            <a href="#charte">La charte du club</a>
+            <a href="#organigrammes">Organigrammes</a>
+            <a href="#dirigeants">Dirigeants</a>
+            <a href="#educateurs">Educateurs</a>
+            <a href="#arbitres">Arbitres</a>
+            <a href="#histoire">Histoire du club</a>
+        </nav>
+
+        <div class="social">
+            <a href="https://www.facebook.com/usvendomefoot/" target="_blank" class="fab fa-facebook-f"></a>
+            <a href="https://www.instagram.com/usvendomefoot/" target="_blank" class="fab fa-instagram"></a>
+        </div>
+        <div class="icons">
+
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- charte section starts  -->
+
+    <section class="charte" id="charte">
+        <div class="content">
+            <h1 class="heading"> <span>charte</span></h1>
+            <div class="row">
+                <div class="image">
+                    <img src="images/Charte.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- charte section ends -->
+
+    <!-- organigrammes section starts  -->
+
+    <section class="organigrammes" id="organigrammes">
+
+        <h1 class="heading"> Organigrammes <span>Sportifs</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/org1.jpeg" alt="Ecole de foot">
+            </div>
+            <div class="box">
+                <img src="images/org2.jpeg" alt="Foot 11 et autres catégories">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- organigrammes section ends -->
+
+    <!-- dirigeants section starts -->
+
+    <section class="dirigeants" id="dirigeants">
+
+        <h1 class="heading"> nos <span>dirigeants</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/photosstaff/Sevket.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Sevket CINAR</a>
+                    <span>PRESIDENT</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/photosstaff/Nicolas_Charrier.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Nicolas CHARRIER</a>
+                    <span>VICE PRESIDENT</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/photosstaff/Wilfried_Couvrat.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Wilfried COUVRAT</a>
+                    <span>VICE PRESIDENT</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/photosstaff/Jacques_Landier.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Jacques LANDIER</a>
+                    <span>SECRETAIRE GENERAL</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/photosstaff/Charles_Lametrie.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Charles LAMETRIE</a>
+                    <span>TRESORIER GENERAL</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/photosstaff/Anthony_Desbureaux.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Anthony DESBUREAUX</a>
+                    <span>DIRECTEUR TECHNIQUE</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/photosstaff/Sébastien_Provost.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Sébastien PROVOST</a>
+                    <span>RESPONSABLE SPONSORING</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/photosstaff/Mohamed_Messaouidi.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Mohamed MESSAOUIDI</a>
+                    <span>MEMBRE DU CONSEIL D'ADMINISTRATION</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/photosstaff/Alexandre_Wszedybyl.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Alexandre WSZEDYBYL</a>
+                    <span>MEMBRE DU CONSEIL D'ADMINISTRATION</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/photosstaff/Pierre-Olivier_Auger.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Pierre-Olivier AUGER</a>
+                    <span>MEMBRE DU CONSEIL D'ADMINISTRATION</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/photosstaff/Siriman_Fofana.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Siriman FOFANA</a>
+                    <span>MEMBRE DU CONSEIL D'ADMINISTRATION</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/photosstaff/Ahmed_Hikem.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Ahmed HIKEM</a>
+                    <span>MEMBRE DU CONSEIL D'ADMINISTRATION</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/photosstaff/Mustapha_Keskiner.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Mustapha KESKINER</a>
+                    <span>MEMBRE DU CONSEIL D'ADMINISTRATION</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/photosstaff/Damien_Girault.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Damien GIRAULT</a>
+                    <span>MEMBRE DU CONSEIL D'ADMINISTRATION</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/photosstaff/Jean-Luc_Poitvin.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Jean-Luc POITVIN</a>
+                    <span>RESPONSABLE SECURITE</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- dirigeants section ends -->
+
+    <!-- educateurs section starts -->
+
+    <section class="educateurs" id="educateurs">
+
+        <h1 class="heading"> nos <span>entraîneurs et éducateurs</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Remy JULLICH</a>
+                    <span>ENTRAÎNEUR</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Benoît GRILLON</a>
+                    <span>ENTRAÎNEUR</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">David PASQUIER</a>
+                    <span>ENTRAÎNEUR</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Florent RABUSSEAU</a>
+                    <span>ENTRAÎNEUR</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Damien DUNAS</a>
+                    <span>ENTRAÎNEUR DES GARDIENS</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="/images/photosstaff/Nicolas_Bandzouzi.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Nicolas BANDZOUZI</a>
+                    <span>EDUCATEUR</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Yanis BRZOSKA</a>
+                    <span>EDUCATEUR</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Tom BRASSEUR</a>
+                    <span>EDUCATEUR</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Doraine PERROCHE</a>
+                    <span>EDUCATEUR</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Romain BORDE</a>
+                    <span>EDUCATEUR</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Dylan AL</a>
+                    <span>EDUCATEUR</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Haydar ERDOGAN</a>
+                    <span>EDUCATEUR</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Julien MARCHAND</a>
+                    <span>EDUCATEUR</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Jérémy GUAIS</a>
+                    <span>EDUCATEUR</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Tom BRASSEUR</a>
+                    <span>EDUCATEUR</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Stéphane TERIER</a>
+                    <span>EDUCATEUR</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Nicolas HEYTE</a>
+                    <span>EDUCATEUR</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Claude DUBOST</a>
+                    <span>EDUCATEUR</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Adnan KHALED</a>
+                    <span>EDUCATEUR</span>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </section>
+
+    <!-- educateurs section ends -->
+
+    <!-- arbitres section starts -->
+
+    <section class="arbitres" id="arbitres">
+
+        <h1 class="heading"> nos <span>arbitres</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/photosstaff/Remi_Marchand.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Rémi MARCHAND</a>
+                    <span>REFERENT ARBITRE</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- arbitres section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="social">
+            <a href="https://www.facebook.com/usvendomefoot/" target="_blank" class="fab fa-facebook-f"></a>
+            <a href="https://www.instagram.com/usvendomefoot/" target="_blank" class="fab fa-instagram"></a>
+        </div>
+
+        <div class="links">
+            <a href="#">Accueil</a>
+            <a href="#">Le club</a>
+            <a href="#">Les équipes</a>
+            <a href="#">Agenda</a>
+            <a href="#">Partenaires</a>
+            <a href="#">Contact</a>
+            <a href="#">Dirigeants & Educateurs</a>
+        </div>
+
+        <div class="credit">created by <span>JC</span> | all rights reserved</div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
