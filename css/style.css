@@ -138,13 +138,9 @@ section {
     border-radius: 50%;
 }
 
-
 .header .social a:hover {
     background-color: var(--main-color);
 }
-
-
-
 
 #lesequipes-btn {
     display: none;
@@ -192,10 +188,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(../images/usv.png) no-repeat;
-    background-size: auto;
-    background-position: right;
-    margin-right: 20rem;
+    justify-content: space-around;
 }
 
 .accueil .content {
@@ -203,7 +196,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
 }
 
 .accueil .content h3 {
@@ -219,39 +212,21 @@ section {
     color: #eee;
 }
 
-.accueilU12 {
-    min-height: 100vh;
+.background {
     display: flex;
     align-items: center;
-    background: url(../images/U12.jpeg) no-repeat;
-    background-size: auto;
-    background-position: right;
-    margin-right: 30rem;
-}
-
-.accueilU12 .content {
-    max-width: 60rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: right;
-}
-
-.accueilU12 .content h3 {
-    font-size: 7rem;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-.accueilU12 .content p {
-    font-size: 2rem;
-    line-height: 1.8;
-    padding: 1rem 0;
-    color: #eee;
+    justify-content: center;
 }
 
 .leclub {
     min-height: 100vh;
+}
+
+.leclub .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .leclub .row {
@@ -277,6 +252,7 @@ section {
 .leclub .row .content h3 {
     font-size: 3rem;
     color: #fff;
+    text-align: center;
 }
 
 .leclub .row .content p {
@@ -300,10 +276,12 @@ section {
 
 .lesequipes .box-container .box img {
     height: 30rem;
+    justify-content: center;
 }
 
 .lesequipes .box-container .box img:hover {
     height: 40rem;
+    align-self: center;
 }
 
 .lesequipes .box-container .box h3 {
@@ -391,6 +369,7 @@ section {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 
 }
 
@@ -597,18 +576,126 @@ textarea {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* media queries  */
+@media (max-width:1212px) {
+    .accueil .content {
+        display: none;
+    }
+
+    .accueil .background img {
+        width: 100vw;
+        margin-top: 10rem;
+    }
+
+    .header .navbar a {
+        font-size: 1rem;
+        padding: .25rem;
+    }
+
+    .header .navbar {
+        width: 100vw;
+    }
+
+    .header .social a {
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+        font-size: 2rem;
+        text-align: center;
+        color: #fff;
+        border: var(--border);
+        margin: .3rem;
+        border-radius: 50%;
+    }
+
+    .header .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (max-width:1200px) {
+        .header .navbar a {
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        .img-responsive {
+            max-width: 80%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    .header .social a {
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+        font-size: 2rem;
+        text-align: center;
+        color: #fff;
+        border: var(--border);
+        margin: .3rem;
+        border-radius: 50%;
+    }
+
+    .header .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:1300px) {
+    .header .navbar a {
+        font-size: 1.2rem;
+        padding: .5rem;
+    }
+}
+
+@media (max-width:1340px) {
+    .background {
+        width: 50%;
+    }
+
+    .accueil .content h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .accueil .content p {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width:1550px) {
+    .lesequipes .box-container .box img {
+        height: 30rem;
+    }
+
+    .lesequipes .box-container .box img:hover {
+        height: 35rem;
+    }
+}
+
+@media (max-width:1430px) {
+    .lesequipes .box-container .box img {
+        height: 25rem;
+    }
+
+    .lesequipes .box-container .box img:hover {
+        height: 30rem;
+    }
+
+    .lesequipes .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        gap: 1.5rem;
+    }
+
+}
+
 @media (max-width:991px) {
 
     html {
@@ -659,7 +746,7 @@ textarea {
 
     .accueil {
         background-position: left;
-        justify-content: center;
+        justify-content: space-evenly;
         text-align: center;
     }
 
@@ -673,10 +760,22 @@ textarea {
 
 }
 
+@media (max-width:1575px) {
+    .accueil .content h3 {
+        font-size: 4.5rem;
+    }
+
+    .accueil .content p {
+        font-size: 2rem;
+    }
+
+}
+
 @media (max-width:450px) {
 
     html {
         font-size: 50%;
     }
+
 
 }
