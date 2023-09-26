@@ -15,7 +15,7 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
     transition: .2s linear;
 }
 
@@ -142,9 +142,6 @@ section {
 .header .social a:hover {
     background-color: var(--main-color);
 }
-
-
-
 
 #organigrammes-btn {
     display: none;
@@ -478,7 +475,46 @@ section {
 }
 
 /* arbitres ends */
+/* histoire starts */
+.histoire {
+    min-height: 100vh;
+}
 
+.histoire .box-container {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+    gap: 1.5rem;
+}
+
+.histoire .box-container .box {
+    text-transform: none;
+    padding: 3rem;
+    text-align: justify;
+    font-size: 2.5rem;
+    color: white;
+    border: var(--border);
+}
+
+.histoire .box-container .box img {
+    max-width: 100%;
+}
+
+.histoire .box-container .box .imghistoire {
+
+    text-align: center;
+    /* Centre l'image horizontalement */
+    display: flex;
+    justify-content: center;
+    /* Centre l'image verticalement */
+    align-items: center;
+    /* Centre l'image verticalement */
+    margin-top: 20px;
+    /* Optionnel : Ajoutez de la marge en haut de l'image */
+}
+
+
+/* histoire ends */
 
 .footer {
     background: var(--black);
@@ -533,18 +569,6 @@ section {
 .footer .credit span {
     color: var(--main-color);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* media queries  */
 @media (max-width:991px) {
@@ -616,5 +640,6 @@ section {
     html {
         font-size: 50%;
     }
+
 
 }
