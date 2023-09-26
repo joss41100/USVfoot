@@ -577,6 +577,72 @@ textarea {
 
 
 /* media queries  */
+@media (width < 600px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .logopart {
+        width: 8rem;
+        /* Vous pouvez ajuster la largeur en fonction de vos besoins */
+        padding: 5px;
+    }
+
+
+
+    .lesequipes .box-container .box .imgequipes {
+        height: 20rem;
+        justify-content: center;
+    }
+
+    .lesequipes .box-container .box .imgequipes:hover {
+        height: 20rem;
+        align-self: center;
+    }
+
+
+    .agenda .box-container .box .content .image img {
+        width: 90%;
+        height: auto;
+    }
+
+    .agenda .box-container .box .content h3 {
+        color: #fff;
+        font-size: 2.5rem;
+    }
+
+
+
+    .agenda .box-container .box .content .division {
+        color: #fff;
+        font-size: 2.5rem;
+    }
+
+    .agenda .box-container .box .content .division span {
+        text-decoration: line-through;
+        font-weight: lighter;
+        font-size: 1.5rem;
+    }
+
+
+
+
+}
+
+@media (max-width:1200px) {
+    .header .navbar a {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .img-responsive {
+        max-width: 80%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
 @media (max-width:1212px) {
     .accueil .content {
         display: none;
@@ -612,19 +678,6 @@ textarea {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    @media (max-width:1200px) {
-        .header .navbar a {
-            font-size: 1rem;
-            width: 100%;
-        }
-
-        .img-responsive {
-            max-width: 80%;
-            height: auto;
-            object-fit: contain;
-        }
     }
 
     .header .social a {
@@ -758,6 +811,8 @@ textarea {
         font-size: 1.5rem;
     }
 
+
+
 }
 
 @media (max-width:1575px) {
@@ -768,14 +823,5 @@ textarea {
     .accueil .content p {
         font-size: 2rem;
     }
-
-}
-
-@media (max-width:450px) {
-
-    html {
-        font-size: 50%;
-    }
-
 
 }
