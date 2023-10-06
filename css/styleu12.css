@@ -73,8 +73,8 @@ section {
 
 
 
-.btn a:hover {
-  color: white;
+.btn:hover {
+  letter-spacing: .2rem;
 }
 
 .header {
@@ -150,7 +150,7 @@ section {
 /* Start accueil U12 */
 
 .content {
-  min-height: 100vh;
+  min-height: 90vh;
   margin-top: 5rem;
   display: flex;
   flex-wrap: wrap;
@@ -195,7 +195,7 @@ section {
 .calendrier {
   min-height: 100vh;
   margin: 20%;
-  background-image: url('images/USV-vierge.png');
+  background-image: url('/images/USV-vierge.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -224,20 +224,25 @@ section {
 }
 
 .E1 {
-  width: 20%;
+  width: 10%;
   text-align: right;
   padding-right: 5%;
 
 }
 
 .E2 {
-  width: 20%;
+  width: 10%;
   text-align: left;
   padding-left: 5%;
 }
 
 .LOGOE {
-  width: 5%;
+  width: auto;
+  height: 10px;
+}
+
+.LOGOE img {
+  width: 10px;
 }
 
 .SCORE {
@@ -311,7 +316,7 @@ td {
 .classement {
   min-height: 100vh;
   margin: 20%;
-  background-image: url('images/USV-vierge.png');
+  background-image: url('/images/USV-vierge.png');
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
@@ -351,9 +356,7 @@ td {
   padding-left: 5%;
 }
 
-.LOGOE img {
-  width: ;
-}
+
 
 .SCORE {
   width: 10%;
@@ -482,7 +485,7 @@ td {
 /* media queries */
 
 /* max 1380px */
-
+/*
 @media (max-width:1370px) {
 
   .header .navbar a {
@@ -511,10 +514,25 @@ td {
   }
 }
 
-@media (max-width: 768px) {
+*/
+@media screen and (max-width: 480px) {
+
+  /* header */
+
+  html {
+    font-size: 50%;
+  }
 
   #menu-btn {
     display: inline-block;
+  }
+
+  .header {
+    width: 100vw;
+  }
+
+  .header .logo {
+    height: auto;
   }
 
   .header .navbar {
@@ -538,29 +556,10 @@ td {
     font-size: 2rem;
   }
 
-  .accueilu12 {
-    background-position: left;
-    justify-content: space-evenly;
-    text-align: center;
-  }
-
-  .accueilu12 .content h3 {
-    font-size: 4.5rem;
-  }
-
-  .accueilu12 .content p {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 450px) {
-
-
   .content {
-    padding: 0;
-  }
-
-  #menu-btn {
+    padding-top: 12rem;
+    height: 50%;
+    margin: 0;
     display: inline-block;
   }
 
@@ -571,7 +570,7 @@ td {
   }
 
   .right img {
-    width: 80%;
+    width: 60%;
   }
 
   .coach-name {
@@ -579,28 +578,10 @@ td {
     padding: 0;
   }
 
-  .header .navbar {
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    background: #fff;
-    width: 30rem;
-    height: calc(100vh - 9.5rem);
-  }
-
-  .header .navbar.active {
-    right: 0;
-  }
-
-  .header .navbar a {
-    color: var(--black);
-    display: block;
-    margin: 1.5rem;
-    padding: .5rem;
-    font-size: 2rem;
-  }
+  /* header */
 
   .accueilu12 {
+    width: 100vw;
     background-position: left;
     justify-content: space-evenly;
     text-align: center;
@@ -637,13 +618,21 @@ td {
     font-size: 1rem;
   }
 
+  .calendrier {
+    max-height: 100vh;
+    background-image: url('/images/USV-vierge.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: #fff;
+    overflow: hidden;
+  }
+
+
   .calendrierresultats {
     padding-top: 0;
   }
 
-  .containercalendrier {
-    display: block;
-  }
 
   .calendrier .heading {
     padding-bottom: 0;
@@ -683,7 +672,7 @@ td {
   }
 
   .containercalendrier {
-    padding-top: 60%;
+    padding: 0;
   }
 
 }
