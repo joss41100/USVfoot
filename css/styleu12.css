@@ -142,46 +142,9 @@ section {
   background-color: var(--main-color);
 }
 
-#lesequipes-btn {
-  display: none;
-}
 
-.header .search-form {
-  position: absolute;
-  top: 115%;
-  right: 7%;
-  background: #fff;
-  width: 50rem;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  transform: scaleY(0);
-  transform-origin: top;
-}
 
-.header .search-form.active {
-  transform: scaleY(1);
-}
 
-.header .search-form input {
-  height: 100%;
-  width: 100%;
-  font-size: 1.6rem;
-  color: var(--black);
-  padding: 1rem;
-  text-transform: none;
-}
-
-.header .search-form label {
-  cursor: pointer;
-  font-size: 2.2rem;
-  margin-right: 1.5rem;
-  color: var(--black);
-}
-
-.header .search-form label:hover {
-  color: var(--main-color);
-}
 
 
 /* Start accueil U12 */
@@ -228,431 +191,238 @@ section {
 
 /* start calendrier */
 
-/* Styles pour la section calendrierU12 */
-.calendrierU12 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+.calendrier {
   min-height: 100vh;
-  min-width: 100vw;
-
+  margin: 20%;
+  background-image: url('/images/USV-vierge.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 40px 0;
+  overflow: hidden;
 }
 
-.calendaru12 {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-
+.containercalendrier {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.date1 {
-  grid-area: 1 / 1 / 2 / 6;
-}
-
-*[class^="date"] {
-  font-size: 2.5rem;
-  color: white;
+.containercalendrier h2 {
   text-align: center;
-  padding: 1rem;
+  font-size: 3rem;
+
+  margin-bottom: 20px;
 }
 
-*[class^="match"] {
+.containercalendrier table {
+  position: relative;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.E1 {
+  width: 20%;
+  text-align: right;
+  padding-right: 5%;
+
+}
+
+.E2 {
+  width: 20%;
+  text-align: left;
+  padding-left: 5%;
+}
+
+.LOGOE {
+  width: 5%;
+}
+
+.SCORE {
+  width: 10%;
+}
+
+.DATE {
+  width: 20%;
+}
+
+/* Set the width to 50% to make them equal */
+
+
+.containercalendrier table,
+th,
+td {
   font-size: 2rem;
-  color: white;
-  justify-content: left;
-  padding: 1rem;
+
+  border: 1px solid #fff;
+  border-collapse: collapse;
 }
 
-*[class^="tiret"] {
-  font-size: 2rem;
-  color: white;
-  justify-content: center;
-  padding: 1rem;
-}
-
-*[class^="logom"] {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-}
-
-
-.div2 {
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-.div3 {
-  grid-area: 2 / 2 / 3 / 3;
-}
-
-.div4 {
-  grid-area: 2 / 3 / 3 / 4;
-}
-
-.div5 {
-  grid-area: 2 / 4 / 3 / 5;
-}
-
-.div6 {
-  grid-area: 2 / 5 / 3 / 6;
-}
-
-.date2 {
-  grid-area: 3 / 1 / 4 / 6;
-}
-
-.div8 {
-  grid-area: 4 / 1 / 5 / 2;
-}
-
-.div9 {
-  grid-area: 4 / 2 / 5 / 3;
-}
-
-.div10 {
-  grid-area: 4 / 3 / 5 / 4;
-}
-
-.div11 {
-  grid-area: 4 / 4 / 5 / 5;
-}
-
-.div12 {
-  grid-area: 4 / 5 / 5 / 6;
-}
-
-.date3 {
-  grid-area: 5 / 1 / 6 / 6;
-}
-
-.div14 {
-  grid-area: 6 / 1 / 7 / 2;
-}
-
-.div15 {
-  grid-area: 6 / 2 / 7 / 3;
-}
-
-.div16 {
-  grid-area: 6 / 3 / 7 / 4;
-}
-
-.div17 {
-  grid-area: 6 / 4 / 7 / 5;
-}
-
-.div18 {
-  grid-area: 6 / 5 / 7 / 6;
-}
-
-.date4 {
-  grid-area: 7 / 1 / 8 / 6;
-}
-
-.div20 {
-  grid-area: 8 / 1 / 9 / 2;
-}
-
-.div21 {
-  grid-area: 8 / 2 / 9 / 3;
-}
-
-.div22 {
-  grid-area: 8 / 3 / 9 / 4;
-}
-
-.div23 {
-  grid-area: 8 / 4 / 9 / 5;
-}
-
-.div24 {
-  grid-area: 8 / 5 / 9 / 6;
-}
-
-.date5 {
-  grid-area: 9 / 1 / 10 / 6;
-}
-
-.div26 {
-  grid-area: 10 / 1 / 11 / 2;
-}
-
-.div27 {
-  grid-area: 10 / 2 / 11 / 3;
-}
-
-.div28 {
-  grid-area: 10 / 3 / 11 / 4;
-}
-
-.div29 {
-  grid-area: 10 / 4 / 11 / 5;
-}
-
-.div30 {
-  grid-area: 10 / 5 / 11 / 6;
-}
-
-
-
-
-.lesequipes .box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
-  gap: 1.5rem;
-}
-
-.lesequipes .box-container .box {
-  padding: 5rem;
+.containercalendrier th,
+td {
+  padding: 3px;
   text-align: center;
-  border: var(--border);
 }
 
-.lesequipes .box-container .box img {
-  height: 30rem;
+.containercalendrier th {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.lesequipes .box-container .box img:hover {
-  height: 40rem;
-}
-
-.lesequipes .box-container .box h3 {
-  color: #fff;
-  font-size: 2rem;
-  padding: 1rem 0;
-}
-
-.lesequipes .box-container .box .division {
-  color: #fff;
-  font-size: 2.5rem;
-  padding: .5rem 0;
-}
-
-.lesequipes .box-container .box .division span {
-
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.lesequipes .box-container .box:hover {
-  background: #fff;
-  color: var(--black);
-
-
-}
-
-.lesequipes .box-container .box:hover>* {
-  color: var(--black);
-}
-
-;
-
-.agenda .box-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.agenda .box-container .box {
-  text-align: center;
-  border: var(--border);
-  margin: 2rem;
-}
-
-.custom-padding {
-  padding: 10px;
-  /* Ajoute 10 pixels d'espacement autour de l'élément h3 avec la classe .custom-padding */
-}
-
-.agenda .box-container .box .icons a:hover {
-  background: var(--main-color);
-}
-
-.agenda .box-container .box .image {
-  padding: 2.5rem 0;
-}
-
-.agenda .box-container .box .image img {
-  height: 70rem;
-}
-
-.agenda .box-container .box .content h3 {
-  color: #fff;
-  font-size: 2.5rem;
-}
-
-
-
-.agenda .box-container .box .content .division {
-  color: #fff;
-  font-size: 2.5rem;
-}
-
-.agenda .box-container .box .content .division span {
-  text-decoration: line-through;
-  font-weight: lighter;
-  font-size: 1.5rem;
-}
-
-.container-partenaires {
-  max-width: 100%;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
-/* Style des div contenant les logos */
-.logopart {
-  width: 15rem;
-  /* Vous pouvez ajuster la largeur en fonction de vos besoins */
-  padding: 5px;
-}
-
-/* Style des images (logos) pour les rendre entièrement responsives */
-.logopart img {
-  max-width: 100%;
+.containercalendrier img {
+  max-width: 50px;
   height: auto;
 }
 
+/* calendrier ends */
 
-.contact .row {
+/* classement starts */
+
+.eqp {
   display: flex;
-  background: var(--black);
-  flex-wrap: wrap;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.nomeqp {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.calcomplet {
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  padding: 3rem;
+  font-size: 3rem;
 }
 
-.contact .row h2 {
-  color: white;
-  text-align: center;
-  padding: 1rem;
+.calcomplet a {
+  color: #d3ad7f;
 }
 
-.contact .row .map {
-  flex: 1 1 45rem;
-  width: 100%;
-  object-fit: cover;
-}
-
-.contact .row form {
-  flex: 1 1 45rem;
-  padding: 5rem 2rem;
-  text-align: center;
-}
-
-.contact .row form h3 {
-  text-transform: uppercase;
-  font-size: 3.5rem;
-  color: #fff;
-}
-
-.contact .row form .inputBox {
-  display: flex;
-  align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  background: var(--bg);
-  border: var(--border);
-}
-
-.contact .row form .inputBox span {
-  color: #fff;
-  font-size: 2rem;
-  padding-left: 2rem;
-}
-
-.contact .row form .inputBox input {
-  width: 100%;
-  padding: 2rem;
-  font-size: 1.7rem;
-  color: #fff;
-  text-transform: none;
-  background: none;
-}
-
-.leoadresse .email a {
-  font-size: 2rem;
+.calcomplet :hover {
   color: white;
 }
 
-textarea {
-  width: 100%;
-  font-size: 1.6rem;
-}
 
-.dir-edu .box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 1.5rem;
-}
-
-.dir-edu .box-container .box {
-  border: var(--border);
-  text-align: center;
-}
-
-.dir-edu .box-container .box .image {
-  height: 25rem;
+.classement {
+  min-height: 100vh;
+  margin: 20%;
+  background-image: url('/images/USV-vierge.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 40px 0;
   overflow: hidden;
-  width: 100%;
 }
 
-.dir-edu .box-container .box .image img {
-  height: 100%;
-  object-fit: contain;
-  width: 100%;
+.containerclassement {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.dir-edu .box-container .box:hover .image img {
-  transform: scale(1.2);
-}
-
-.dir-edu .box-container .box .content {
-  padding: 2rem;
-}
-
-.dir-edu .box-container .box .content .title {
-  font-size: 2.5rem;
-  line-height: 1.5;
+.containerclassement h2 {
   text-align: center;
-  color: #fff;
+  font-size: 3rem;
+
+  margin-bottom: 20px;
 }
 
-.dir-edu .box-container .box .content .title:hover {
-  color: var(--main-color);
+.containerclassement table {
+  position: relative;
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.dir-edu .box-container .box .content span {
-  color: var(--main-color);
-  display: block;
-  padding-top: 1rem;
+.E1 {
+  width: 20%;
+  text-align: right;
+  padding-right: 5%;
+
+}
+
+.E2 {
+  width: 20%;
+  text-align: left;
+  padding-left: 5%;
+}
+
+.LOGOE img {
+  width: ;
+}
+
+.SCORE {
+  width: 10%;
+}
+
+.DATE {
+  width: 20%;
+}
+
+.containerclassement table,
+th,
+td {
   font-size: 2rem;
+
+  border: 1px solid #fff;
+  border-collapse: collapse;
 }
 
-.dir-edu .box-container .box .content p {
-  font-size: 1.6rem;
-  line-height: 1.8;
-  color: #ccc;
-  padding: 1rem 0;
+.containerclassement th,
+td {
+  padding: 3px;
+  text-align: center;
 }
 
-#leo {
-  width: 50%;
-  height: 400px;
+.containerclassement th {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-#maillettes {
-  width: 50%;
-  height: 400px;
+.containerclassement img {
+  max-width: 50px;
+  height: auto;
 }
+
+.PLACE {
+  width: 15%;
+}
+
+.EQUIPES {
+  display: flex;
+  width: 40%;
+  text-align: left;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.POINTS {
+  width: 7%;
+}
+
+.GAGNE {
+  width: 7%;
+}
+
+.JOUES {
+  width: 7%;
+}
+
+.NUL {
+  width: 7%;
+}
+
+.PERDU {
+  width: 7%;
+}
+
+
+/*classement ends */
+
+/* footer starts */
 
 .footer {
   background: var(--black);
@@ -708,36 +478,40 @@ textarea {
   color: var(--main-color);
 }
 
+/* footer ends */
+/* media queries */
 
+/* max 1380px */
 
+@media (max-width:1370px) {
 
-
-
-
-
-
-
-
-
-
-/* media queries  */
-@media (max-width:991px) {
-
-  html {
-    font-size: 55%;
+  .header .navbar a {
+    font-size: 1.2rem;
+    margin: 10px;
   }
 
-  .header {
-    padding: 1.5rem 2rem;
+  .LOGOE img {
+    width: 20px;
   }
 
-  section {
-    padding: 2rem;
+  .E1,
+  .E2,
+  .DATE,
+  .SCORE,
+  .calcomplet {
+    font-size: 1.2rem;
   }
-
 }
 
-@media (max-width:768px) {
+@media (max-width:1150px) {
+
+  .header .navbar a {
+    font-size: 1.2rem;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
 
   #menu-btn {
     display: inline-block;
@@ -764,31 +538,152 @@ textarea {
     font-size: 2rem;
   }
 
-  .header .search-form {
-    width: 90%;
-    right: 2rem;
-  }
-
-  .accueil {
+  .accueilu12 {
     background-position: left;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
   }
 
-  .accueil .content h3 {
+  .accueilu12 .content h3 {
     font-size: 4.5rem;
   }
 
-  .accueil .content p {
+  .accueilu12 .content p {
     font-size: 1.5rem;
   }
-
 }
 
-@media (max-width:450px) {
+@media (max-width: 450px) {
 
-  html {
-    font-size: 50%;
+
+  .content {
+    padding: 0;
+  }
+
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .team-info {
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .right img {
+    width: 80%;
+  }
+
+  .coach-name {
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: #fff;
+    width: 30rem;
+    height: calc(100vh - 9.5rem);
+  }
+
+  .header .navbar.active {
+    right: 0;
+  }
+
+  .header .navbar a {
+    color: var(--black);
+    display: block;
+    margin: 1.5rem;
+    padding: .5rem;
+    font-size: 2rem;
+  }
+
+  .accueilu12 {
+    background-position: left;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  .eqp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .nomeqp {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  .calcomplet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .75rem;
+  }
+
+  .calcomplet a {
+    color: #d3ad7f;
+  }
+
+  .calcomplet :hover {
+    color: white;
+  }
+
+  .calendrierresultats .heading {
+    font-size: 1rem;
+  }
+
+  .calendrierresultats {
+    padding-top: 0;
+  }
+
+  .containercalendrier {
+    display: block;
+  }
+
+  .calendrier .heading {
+    padding-bottom: 0;
+  }
+
+  .E1,
+  .E2,
+  .DATE,
+  .SCORE,
+  .PLACE,
+  .eqp,
+  .POINTS,
+  .JOUES,
+  .GAGNE,
+  .NUL,
+  .PERDU,
+  .BP,
+  .BC,
+  .DIF {
+    font-size: .5rem;
+    text-align: center;
+  }
+
+  .eqp img {
+    width: 70%;
+  }
+
+  .calendrier {
+    display: block;
+    height: 100px;
+    background-size: 100vw;
+  }
+
+  .calendrier .heading {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .containercalendrier {
+    padding-top: 60%;
   }
 
 }
