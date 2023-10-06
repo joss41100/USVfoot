@@ -195,7 +195,7 @@ section {
 .calendrier {
   min-height: 100vh;
   margin: 20%;
-  background-image: url('/images/USV-vierge.png');
+  background-image: url('images/USV-vierge.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -316,7 +316,7 @@ td {
 .classement {
   min-height: 100vh;
   margin: 20%;
-  background-image: url('/images/USV-vierge.png');
+  background-image: url('images/USV-vierge.png');
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
@@ -620,7 +620,7 @@ td {
 
   .calendrier {
     max-height: 100vh;
-    background-image: url('/images/USV-vierge.png');
+    background-image: url('images/USV-vierge.png');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
