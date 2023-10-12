@@ -213,7 +213,7 @@ section {
 .calendrier {
   min-height: 100vh;
   margin: 20%;
-  background-image: url('images/usvvierge.png');
+  background-image: url('/images/usvvierge.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -258,9 +258,6 @@ section {
   height: 30%;
 }
 
-.LOGOE img {
-  width: ;
-}
 
 .SCORE {
   width: 10%;
@@ -909,7 +906,7 @@ td {
   /* resultats media query starts */
   .resultats {
     min-height: 100vh;
-    background-image: url('images/USVvierge.png');
+    background-image: url('images/usvvierge.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1002,7 +999,7 @@ td {
   /* resultats media query starts */
   .resultats {
     min-height: 100vh;
-    background-image: url('images/USVvierge.png');
+    background-image: url('images/usvvierge.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
