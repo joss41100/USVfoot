@@ -2,17 +2,33 @@
 <html lang="en">
 
 <head>
+    <style>
+        /* Masquer l'attribution Leaflet */
+        .leaflet-control-attribution {
+            display: none;
+        }
+    </style>
+    <style>
+        /* Masquer les boutons de zoom */
+        .leaflet-control-zoom {
+            display: none;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>US VENDÔME FOOTBALL CLUB</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- Carte interactive-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- css file  -->
-    <link rel="stylesheet" href="css/styleu12.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
 
+    <!-- css file  -->
+    <link rel="stylesheet" href="css/u12.css">
 
 </head>
 
@@ -22,33 +38,29 @@
 
     <header class="header">
 
-        <a href="#" class="logo">
-            <img src="images/usvbanner.png" alt="">
-        </a>
+        <div><a href="#" class="logo">
+                <img src="images/usvbanner.png" alt="" class="img-responsive">
+            </a></div>
+
         <nav class="navbar">
             <a href="index.html">ACCUEIL</a>
-            <a href="#accueilu12">ACCUEIL U12</a>
             <a href="#calendrierresultats">CALENDRIER / RESULTATS</a>
             <a href="#classement">CLASSEMENT</a>
             <a href="#convocationsU12">CONVOCATIONS</a>
+            <a href="https://www.ekinsport.com/fr/ma-boutique-club/football/usvendome" target="_blank">BOUTIQUE</a>
+
         </nav>
         <div class="social">
-            <a href="https://www.facebook.com/usvendomefoot/" target="_blank" class="fab fa-facebook-f"></a>
-            <a href="https://www.instagram.com/usvendomefoot/" target="_blank" class="fab fa-instagram"></a>
-
+            <div class="icons">
+                <a href="https://www.facebook.com/usvendomefoot/" target="_blank" class="fab fa-facebook-f"></a>
+                <a href="https://www.instagram.com/usvendomefoot/" target="_blank" class="fab fa-instagram"></a>
+                <div class="fas fa-bars" id="menu-btn"></div>
+            </div>
         </div>
-        <div class="icons">
-
-            <div class="fas fa-bars" id="menu-btn"></div>
-        </div>
-        </div>
-
-
     </header>
 
     <!-- header section ends -->
 
-    <!-- home section starts  -->
 
     <section class="accueilu12" id="accueilu12">
 
@@ -66,11 +78,10 @@
 
     </section>
 
-    <!-- home section ends -->
-
+    <!-- accueil section ends -->
     <!-- calendrier / résultats section starts  -->
     <section class="calendrier" id="calendrierresultats">
-        <div class="heading">Calendrier <br><span> U12 D1</span></div>
+        <h1 class="heading"><span>Calendrier</span> U12 D1 </h1>
         <div class="containercalendrier">
             <table>
                 <thead>
@@ -78,7 +89,7 @@
                     <!-- Répétez cette ligne pour chaque résultat -->
 
                     <tr>
-                        <td class="DATE">23/09/2023 à 13h</td>
+                        <td class="DATE">23/09/23 13h</td>
                         <td class="E1">US VENDOME</td>
                         <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq1"></td>
                         <td class="SCORE"> 1 - 3 </td>
@@ -87,7 +98,7 @@
                     </tr>
                     <!-- Répétez cette ligne pour chaque résultat -->
                     <tr>
-                        <td class="DATE">30/09/2023 à 10h30</td>
+                        <td class="DATE">30/09/23 10h30</td>
                         <td class="E1">BLOIS FOOT41</td>
                         <td class="LOGOE"><img src="images/logosclubs/BloisF41.jpeg" alt="logo eq1"></td>
                         <td class="SCORE"> 3 - 2 </td>
@@ -95,15 +106,15 @@
                         <td class="E2">US VENDOME</td>
                     </tr>
                     <tr>
-                        <td class="DATE">23/09/2023 à 10h30</td>
+                        <td class="DATE">23/09/23 10h30</td>
                         <td class="E1">US VENDOME</td>
                         <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="Logo eq1"></td>
-                        <td class="SCORE"> - </td>
+                        <td class="SCORE"> 8 - 0 </td>
                         <td class="LOGOE"><img src="images/logosclubs/ChausséeASJ.jpeg" alt="logo eq2"></td>
                         <td class="E2">CHAUSSEE ASJ</td>
                     </tr>
                     <tr>
-                        <td class="DATE">11/11/2023 à 10h30</td>
+                        <td class="DATE">11/11/23 10h30</td>
                         <td class="E1">VINEUIL SP</td>
                         <td class="LOGOE"><img src="images/logosclubs/Vineuil.jpeg" alt="logo eq1"></td>
                         <td class="SCORE"> - </td>
@@ -111,7 +122,7 @@
                         <td class="E2">US VENDOME</td>
                     </tr>
                     <tr>
-                        <td class="DATE">09/12/2023 à 10h30</td>
+                        <td class="DATE">09/12/23 10h30</td>
                         <td class="E1">US VENDOME</td>
                         <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq1"></td>
                         <td class="SCORE"> - </td>
@@ -124,8 +135,10 @@
             </table>
             <div class="calcomplet">
                 <a href="https://loir-et-cher.fff.fr/competitions?tab=calendar&id=412304&phase=1&poule=1&type=ch"
-                    target="_blank">CALENDRIER
-                    / RESULTATS COMPLETS</a>
+                    target="_blank">
+                    <h1 class="heading"> <span>Calendrier </span>complet </h1>
+                </a>
+
             </div>
         </div>
 
@@ -136,7 +149,7 @@
     <!-- classement  section starts -->
 
     <section class="classement" id="classement">
-        <h3 class="heading">Classement <span> U12 D1</span></h3>
+        <h1 class="heading"><span>Classement</span> U12 D1 </h1>
         <div class="containerclassement">
             <table>
                 <thead>
@@ -144,9 +157,9 @@
                 <tbody>
                     <!-- Répétez cette ligne pour chaque résultat -->
                     <tr>
-                        <td class="PLACE">POSITION</td>
+                        <td class="PLACE"></td>
                         <td class="E1">EQUIPE</td>
-                        <td class="POINTS">POINTS
+                        <td class="POINTS">PTS
                         </td>
                         <td class="JOUES">JOUES</td>
                         <td class="GAGNE">GAGNE</td>
@@ -280,13 +293,20 @@
                         <!-- ... Ajoutez les 26 autres lignes ici ... -->
                 </tbody>
             </table>
+            <div class="calcomplet">
+                <a href="https://loir-et-cher.fff.fr/competitions?tab=ranking&id=412304&phase=1&poule=1&type=ch"
+                    target="_blank">
+                    <h1 class="heading"> <span>Classement</span> complet </h1>
+                </a>
+
+            </div>
+
         </div>
 
     </section>
 
 
     <!-- classement section ends -->
-
 
 
     <!-- footer section starts  -->
@@ -299,20 +319,18 @@
         </div>
 
         <div class="links">
-            <a href="#">Accueil</a>
-            <a href="#">Le club</a>
-            <a href="#">Les équipes</a>
-            <a href="#">Agenda</a>
-            <a href="#">Partenaires</a>
-            <a href="#">Contact</a>
-            <a href="#">blogs</a>
+            <a href="index.html">ACCUEIL</a>
+            <a href="#calendrierresultats">CALENDRIER / RESULTATS</a>
+            <a href="#classement">CLASSEMENT</a>
+            <a href="#convocationsU12">CONVOCATIONS</a>
+            <a href="https://www.ekinsport.com" target="_blank">BOUTIQUE</a>
         </div>
 
-        <div class="credit">created by <span>J.C</span> | all rights reserved</div>
+        <div class="credit">created by <span>JC</span> | all rights reserved</div>
 
     </section>
+    <!-- accueil section starts  -->
 
-    <!-- footer section ends -->
 
     <!-- custom js file link  -->
     <script src="js/script.js"></script>
