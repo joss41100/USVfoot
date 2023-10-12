@@ -1331,62 +1331,7 @@ textarea {
     }
 
     /* resultats media query ends */
-    /* les equipes media query starts */
-    .lesequipes {
-        max-width: 100vw;
-    }
-
-    .lesequipes .heading span {
-        font-size: 4rem;
-    }
-
-    .lesequipes h1 {
-        font-size: 4rem;
-    }
-
-    .lesequipes .box-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-        gap: 1.5rem;
-    }
-
-    .lesequipes .box-container .box {
-        text-align: center;
-        border: var(--border);
-
-    }
-
-    .lesequipes .box-container .box img {
-        width: 100%;
-        height: auto;
-
-    }
-
-    .lesequipes .box-container .box h3 {
-        color: #fff;
-        font-size: 3.5rem;
-        padding: 1rem 0;
-    }
-
-    .lesequipes .box-container .box .division span {
-
-        font-size: 3rem;
-        font-weight: bold;
-    }
-
-    .btn {
-        margin-top: 1rem;
-        display: inline-block;
-        padding: .9rem 3rem;
-        font-size: 3rem;
-        color: #fff;
-        background: var(--main-color);
-        cursor: pointer;
-    }
-
-
-
-    /* les equipes media query ends */
+/
     /* agenda media query starts */
     .agenda {
         max-width: 100%;
