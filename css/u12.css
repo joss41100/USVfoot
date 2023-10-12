@@ -331,7 +331,7 @@ td {
 .classement {
   min-height: 100vh;
   margin: 20%;
-  background-image: url('images/usvvierge.png');
+  background-image: url('usvvierge.png');
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
@@ -624,7 +624,7 @@ td {
   .calendrier {
     min-height: 100%;
     margin: 2.5%;
-    background-image: url('images/usvvierge.png');
+    background-image: url('usvvierge.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -743,7 +743,7 @@ td {
   .classement {
     min-height: 100%;
     margin: 2.5%;
-    background-image: url('images/usvvierge.png');
+    background-image: url('usvvierge.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -906,7 +906,7 @@ td {
   /* resultats media query starts */
   .resultats {
     min-height: 100vh;
-    background-image: url('images/usvvierge.png');
+    background-image: url('usvvierge.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -999,7 +999,7 @@ td {
   /* resultats media query starts */
   .resultats {
     min-height: 100vh;
-    background-image: url('images/usvvierge.png');
+    background-image: url('usvvierge.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
