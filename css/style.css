@@ -744,17 +744,58 @@ td {
 }
 
 /* Style des div contenant les logos */
-.logopart {
-    width: 15rem;
-    /* Vous pouvez ajuster la largeur en fonction de vos besoins */
-    padding: 5px;
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
 
-/* Style des images (logos) pour les rendre entièrement responsives */
-.logopart img {
-    max-width: 100%;
-    height: auto;
+
+.logos {
+    min-height: 50vh;
+    overflow: hidden;
+    padding: 15% 0;
+    white-space: nowrap;
+    position: relative;
 }
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #d3ad7f);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #d3ad7f);
+}
+
+
+.logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 20vh;
+    margin: 0 40px;
+}
+
+
 
 /* partenaires ends */
 
