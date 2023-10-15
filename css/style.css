@@ -313,6 +313,8 @@ td {
 .lesequipes .box-container .box img {
     height: 30rem;
     justify-content: center;
+    border :2px solid #d3ad7f;
+    
 }
 
 .lesequipes .box-container .box img:hover {
