@@ -1161,6 +1161,42 @@ textarea {
     }
 
     /* agenda media query ends */
+        /* convocations media query starts */
+    .container-convocations .btncontainer .btneq {
+        width: 12%;
+        height: 5%;
+        padding: 1%;
+        margin: 2%;
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 50px;
+    }
+
+    .tableconvocs {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(23, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+        max-width: 100vw;
+        align-items: center;
+        background-image: url(usvvierge.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: auto;
+
+
+    }
+
+
+    /* convocations media query ends */
+
     /* partenaires media query starts */
     .partenaires .heading span {
         font-size: 2rem;
