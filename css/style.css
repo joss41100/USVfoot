@@ -733,17 +733,6 @@ td {
 
 /* partenaires starts */
 
-.container-partenaires {
-    min-height: 100vh;
-    max-width: 100%;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
-}
-
-/* Style des div contenant les logos */
 @keyframes slide {
     from {
         transform: translateX(0);
