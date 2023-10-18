@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* Masquer l'attribution Leaflet */
+        .leaflet-control-attribution {
+            display: none;
+        }
+    </style>
+    <style>
+        /* Masquer les boutons de zoom */
+        .leaflet-control-zoom {
+            display: none;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US VENDÔME FOOTBALL CLUB</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- Carte interactive-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css file  -->
+    <link rel="stylesheet" href="css/equipes.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <div><a href="#" class="logo">
+                <img src="images/usvbanner.png" alt="" class="img-responsive">
+            </a></div>
+
+        <nav class="navbar">
+            <a href="index.html">ACCUEIL</a>
+            <a href="#calendrierresultats">CALENDRIER / RESULTATS</a>
+            <a href="#classement">CLASSEMENT</a>
+            <a href="#convocationsU17">CONVOCATIONS</a>
+            <a href="https://www.ekinsport.com/fr/ma-boutique-club/football/usvendome" target="_blank">BOUTIQUE</a>
+
+        </nav>
+        <div class="social">
+            <div class="icons">
+                <a href="https://www.facebook.com/usvendomefoot/" target="_blank" class="fab fa-facebook-f"></a>
+                <a href="https://www.instagram.com/usvendomefoot/" target="_blank" class="fab fa-instagram"></a>
+                <div class="fas fa-bars" id="menu-btn"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- header section ends -->
+
+
+    <section class="accueilequipes" id="accueilequipes">
+
+        <div class="content">
+            <div class="left">
+                <div class="team-info">Equipe U17</div>
+                <div class="team-info">1ère division départementale</div>
+                <img src="images/usv.jpg" alt="">
+                <div class="coach-name">Coach : </div>
+            </div>
+            <div class="right">
+                <img src="images/usv.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- accueil section ends -->
+    <!-- calendrier / résultats section starts  -->
+    <section class="calendrier" id="calendrierresultats">
+        <h1 class="heading"><span>Calendrier</span> U17 D1 </h1>
+        <div class="containercalendrier">
+            <table>
+                <thead>
+                <tbody>
+                    <!-- Répétez cette ligne pour chaque résultat -->
+
+                    <tr>
+                        <td class="DATE">16/09/23 14h30</td>
+                        <td class="E1">CHAUSSEE ASJ</td>
+                        <td class="LOGOE"><img src="images/logosclubs/ChausséeASJ.jpeg" alt=""></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt=""></td>
+                        <td class="E2">US VENDOME</td>
+                    </tr>
+                    <!-- Répétez cette ligne pour chaque résultat -->
+                    <tr>
+                        <td class="DATE">23/09/23</td>
+                        <td class="E1">EXEMPT</td>
+                        <td class="LOGOE"><img src="" alt=""></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt=""></td>
+                        <td class="E2">US VENDOME</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">07/10/23 18h00</td>
+                        <td class="E1">US VENDOME</td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt=""></td>
+                        <td class="SCORE"> 4 - 1 </td>
+                        <td class="LOGOE"><img src="images/logosclubs/chouzy.jpeg" alt=""></td>
+                        <td class="E2">CHOUZY/ONZAIN
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">04/11/23 15H30</td>
+                        <td class="E1">ST AMAND AVEN</td>
+                        <td class="LOGOE"><img src="images/logosclubs/stamand.jpeg" alt=""></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt=""></td>
+                        <td class="E2">US VENDOME</td>
+                    </tr>
+
+                    <tr>
+                        <td class="DATE">11/11/23 18h00</td>
+                        <td class="E1">US VENDOME</td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/bfc.jpeg" alt="logo eq2"></td>
+                        <td class="E2">BFC</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">25/11/23 17H30</td>
+                        <td class="E1">VINEUIL SP</td>
+                        <td class="LOGOE"><img src="images/logosclubs/Vineuil.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq2"></td>
+                        <td class="E2">US VENDOME</td>
+                    </tr>
+
+                    <tr>
+                        <td class="DATE">02/12/23 17H30</td>
+                        <td class="E1">US VENDOME</td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/Mer.jpeg" alt="logo eq2"></td>
+                        <td class="E2">US MER</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">16/12/23 17H30</td>
+                        <td class="E1">US VENDOME</td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/chouzy.jpeg" alt="logo eq2"></td>
+                        <td class="E2">CHOUZY ONZAIN</td>
+                    </tr>
+
+
+                    <tr>
+                        <td class="DATE">20/01/24</td>
+                        <td class="E1">US VENDOME</td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="" alt=""></td>
+                        <td class="E2">EXEMPT</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">27/01/24</td>
+                        <td class="E1">CHOUZY ONZAIN</td>
+                        <td class="LOGOE"><img src="images/logosclubs/chouzy.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq2"></td>
+                        <td class="E2">US VENDOME</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">17/02/24 17H30</td>
+                        <td class="E1">US VENDOME </td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/stamand.jpeg" alt="logo eq2"></td>
+                        <td class="E2">ST AMAND AVEN</td>
+                    </tr>
+
+                    <tr>
+                        <td class="DATE">16/03/24 15h00</td>
+                        <td class="E1">BFC</td>
+                        <td class="LOGOE"><img src="images/logosclubs/bfc.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq2"></td>
+                        <td class="E2">US VENDOME</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">23/03/24 17h30</td>
+                        <td class="E1">US VENDOME</td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/Vineuil.jpeg" alt="logo eq2"></td>
+                        <td class="E2">VINEUIL SP</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">13/04/24 14H30</td>
+                        <td class="E1">US MER</td>
+                        <td class="LOGOE"><img src="images/logosclubs/Mer.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq2"></td>
+                        <td class="E2">US VENDOME</td>
+                    </tr>
+
+
+                    <!-- ... Ajoutez les 26 autres lignes ici ... -->
+                </tbody>
+            </table>
+            <div class="calcomplet">
+                <a href="https://loir-et-cher.fff.fr/competitions?tab=calendar&id=412295&phase=1&poule=1&type=ch"
+                    target="_blank">
+                    <h1 class="heading"> <span>Calendrier </span>complet </h1>
+                </a>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- calendrier / résultats section ends  -->
+
+    <!-- classement  section starts -->
+
+    <section class="classement" id="classement">
+        <h1 class="heading"><span>Classement</span> U17 D1 </h1>
+        <div class="containerclassement">
+            <table>
+                <thead>
+                </thead>
+                <tbody>
+                    <!-- Répétez cette ligne pour chaque résultat -->
+                    <tr>
+                        <td class="PLACE"></td>
+                        <td class="E1">EQUIPE</td>
+                        <td class="POINTS">PTS
+                        </td>
+                        <td class="JOUES">JOUES</td>
+                        <td class="GAGNE">GAGNE</td>
+                        <td class="NUL">NUL</td>
+                        <td class="PERDU">PERDU</td>
+                        <td class="BP">BP</td>
+                        <td class="BC">BC</td>
+                        <td class="DIF">DIF</td>
+                    <tr>
+                        <!-- 1ère place -->
+                        <td class="PLACE"> 1 </td>
+                        <td>
+                            <div class="eqp">
+                                <div class="nomeqp">
+                                    CHOUZY ONZAIN
+                                </div>
+                                <div class="logoeqp">
+                                    <img src="images/logosclubs/chouzy.jpeg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="POINTS"> 6 </td>
+                        <td class="JOUES"> 3 </td>
+                        <td class="GAGNE"> 2 </td>
+                        <td class="NUL"> 0 </td>
+                        <td class="PERDU"> 1 </td>
+                        <td class="BP"> 13 </td>
+                        <td class="BC"> 7 </td>
+                        <td class="DIF"> 6 </td>
+                    <tr>
+                        <!-- -->
+                        <td class="PLACE"> 2 </td>
+                        <td>
+                            <div class="eqp">
+                                <div class="nomeqp">CHAUSSEE ASJ
+                                </div>
+                                <div class="logoeqp">
+                                    <img src="images/logosclubs/ChausséeASJ.jpeg" alt="">
+                                </div>
+                            </div>
+                        </td>
+
+                        <td class="POINTS"> 3 </td>
+                        <td class="JOUES"> 1 </td>
+                        <td class="GAGNE"> 1 </td>
+                        <td class="NUL"> 0 </td>
+                        <td class="PERDU"> 0 </td>
+
+                        <td class="BP"> 7 </td>
+                        <td class="BC"> 1 </td>
+                        <td class="DIF"> 6 </td>
+                    <tr>
+                        <td class="PLACE"> 3 </td>
+                        <td>
+                            <div class="eqp">
+                                <div class="nomeqp">
+                                    <span>VINEUIL SP</span>
+                                </div>
+                                <div class="logoeqp">
+                                    <img src="images/logosclubs/Vineuil.jpeg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="POINTS"> 3 </td>
+                        <td class="JOUES"> 2 </td>
+                        <td class="GAGNE"> 1 </td>
+                        <td class="NUL"> 0 </td>
+                        <td class="PERDU"> 1 </td>
+                        <td class="BP"> 6 </td>
+                        <td class="BC"> 8 </td>
+                        <td class="DIF"> -2 </td>
+                    <tr>
+                        <td class="PLACE"> 4 </td>
+                        <td>
+                            <div class="eqp">
+                                <div class="nomeqp">
+                                    <span>BFC</span>
+                                </div>
+                                <div class="logoeqp">
+                                    <img src="images/logosclubs/bfc.jpeg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="POINTS"> 3 </td>
+                        <td class="JOUES"> 3 </td>
+                        <td class="GAGNE"> 1 </td>
+                        <td class="NUL"> 0 </td>
+                        <td class="PERDU"> 2 </td>
+                        <td class="BP"> 5 </td>
+                        <td class="BC"> 12 </td>
+                        <td class="DIF"> -7 </td>
+                    <tr>
+                        <td class="PLACE"> 5 </td>
+                        <td>
+                            <div class="eqp">
+                                <div class="nomeqp">
+                                    <span>US MER</span>
+                                </div>
+                                <div class="logoeqp">
+                                    <img src="images/logosclubs/Mer.jpeg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="POINTS"> 3 </td>
+                        <td class="JOUES"> 2 </td>
+                        <td class="GAGNE"> 1 </td>
+                        <td class="NUL"> 0 </td>
+                        <td class="PERDU"> 1 </td>
+                        <td class="BP"> 13 </td>
+                        <td class="BC"> 6 </td>
+                        <td class="DIF"> 7 </td>
+                    <tr>
+                        <td class="PLACE"> 6 </td>
+                        <td>
+                            <div class="eqp">
+                                <div class="nomeqp">
+                                    US VENDOME
+                                </div>
+                                <div class="logoeqp">
+                                    <img src="images/logosclubs/usv.jpeg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="POINTS"> 3 </td>
+                        <td class="JOUES"> 1 </td>
+                        <td class="GAGNE"> 1 </td>
+                        <td class="NUL"> 0 </td>
+                        <td class="PERDU"> 0 </td>
+                        <td class="BP"> 4 </td>
+                        <td class="BC"> 1 </td>
+                        <td class="DIF"> 3 </td>
+                    <tr>
+                        <td class="PLACE"> 7 </td>
+                        <td>
+                            <div class="eqp">
+                                <div class="nomeqp">
+                                    ST AMAND AVEN
+                                </div>
+                                <div class="logoeqp">
+                                    <img src="images/logosclubs/stamand.jpeg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="POINTS"> 0 </td>
+                        <td class="JOUES"> 2 </td>
+                        <td class="GAGNE"> 0 </td>
+                        <td class="NUL"> 0 </td>
+                        <td class="PERDU"> 2 </td>
+                        <td class="BP"> 1 </td>
+                        <td class="BC"> 14 </td>
+                        <td class="DIF"> -13 </td>
+
+                        <!-- ... Ajoutez les 26 autres lignes ici ... -->
+                </tbody>
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- classement section ends -->
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="social">
+            <a href="https://www.facebook.com/usvendomefoot/" target="_blank" class="fab fa-facebook-f"></a>
+            <a href="https://www.instagram.com/usvendomefoot/" target="_blank" class="fab fa-instagram"></a>
+        </div>
+
+        <div class="links">
+            <a href="index.html">ACCUEIL</a>
+            <a href="#calendrierresultats">CALENDRIER / RESULTATS</a>
+            <a href="#classement">CLASSEMENT</a>
+            <a href="#convocationsU17">CONVOCATIONS</a>
+            <a href="https://www.ekinsport.com" target="_blank">BOUTIQUE</a>
+        </div>
+
+        <div class="credit">created by <span>JC</span> | all rights reserved</div>
+
+    </section>
+    <!-- accueil section starts  -->
+
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
