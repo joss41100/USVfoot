@@ -157,7 +157,7 @@ section {
   background-color: var(--main-color);
 }
 
-/* Start accueil U12 */
+/* Start accueil */
 
 .content {
   min-height: 90vh;
@@ -206,7 +206,7 @@ section {
   color: white;
 }
 
-/* end accueil U12 */
+/* end accueil */
 /* start calendrier */
 
 
@@ -558,7 +558,7 @@ td {
   }
 
   /* header media query ends */
-  /* accueil U12 media query starts */
+  /* accueil media query starts */
   .content {
     min-height: 90vh;
     margin-top: 5rem;
@@ -608,7 +608,7 @@ td {
     color: white;
   }
 
-  /* accueil U12 media query ends */
+  /* accueil media query ends */
 
   /* calendrier media query starts */
 
@@ -897,7 +897,7 @@ td {
   }
 
   /* header media query ends */
-  /* accueil u12 media query starts */
+  /* accueil media query starts */
   .right {
     display: flex;
     justify-content: center;
