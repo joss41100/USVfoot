@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* Masquer l'attribution Leaflet */
+        .leaflet-control-attribution {
+            display: none;
+        }
+    </style>
+    <style>
+        /* Masquer les boutons de zoom */
+        .leaflet-control-zoom {
+            display: none;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US VENDÔME FOOTBALL CLUB</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- Carte interactive-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css file  -->
+    <link rel="stylesheet" href="css/equipes.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <div><a href="#" class="logo">
+                <img src="images/usvbanner.png" alt="" class="img-responsive">
+            </a></div>
+
+        <nav class="navbar">
+            <a href="index.html">ACCUEIL</a>
+            <a href="#calendrierresultats">CALENDRIER / RESULTATS</a>
+            <a href="#classement">CLASSEMENT</a>
+            <a href="#convocationsseniors1">CONVOCATIONS</a>
+            <a href="https://www.ekinsport.com/fr/ma-boutique-club/football/usvendome" target="_blank">BOUTIQUE</a>
+
+        </nav>
+        <div class="social">
+            <div class="icons">
+                <a href="https://www.facebook.com/usvendomefoot/" target="_blank" class="fab fa-facebook-f"></a>
+                <a href="https://www.instagram.com/usvendomefoot/" target="_blank" class="fab fa-instagram"></a>
+                <div class="fas fa-bars" id="menu-btn"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- header section ends -->
+
+
+    <section class="accueilequipes" id="accueilequipes">
+
+        <div class="content">
+            <div class="left">
+                <div class="team-info">Séniors 1</div>
+                <div class="team-info">1ère division départementale</div>
+                <img src="images/photosstaff/remyjullich.jpeg" alt="Rémy JULLICH">
+                <div class="coach-name">Coach : Rémy JULLICH</div>
+            </div>
+            <div class="right">
+                <img src="images/photosequipes/seniors1.jpeg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- accueil section ends -->
+    <!-- calendrier / résultats section starts  -->
+    <section class="calendrier" id="calendrierresultats">
+        <h1 class="heading"><span>Calendrier</span> SENIORS 1 D1 </h1>
+        <div class="containercalendrier">
+            <table>
+                <thead>
+                <tbody>
+                    <!-- Répétez cette ligne pour chaque résultat -->
+
+                    <tr>
+                        <td class="DATE">09/09/23 19h00</td>
+                        <td class="E1">BLOIS ASC PORTUGAIS</td>
+                        <td class="LOGOE"><img src="images/logosclubs/bloisasc.jpeg" alt=""></td>
+                        <td class="SCORE"> 2 - 5 </td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt=""></td>
+                        <td class="E2">US VENDOME</td>
+                    </tr>
+                    <!-- Répétez cette ligne pour chaque résultat -->
+                    <tr>
+                        <td class="DATE">23/09/23 18h00</td>
+                        <td class="E1">US VENDOME</td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt=""></td>
+                        <td class="SCORE"> 2 - 0 </td>
+                        <td class="LOGOE"><img src="images/logosclubs/villebarou.jpeg" alt=""></td>
+                        <td class="E2">ETS VILLEBAROU</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">07/10/23 19h00</td>
+                        <td class="E1">US PETITE BEAUCE</td>
+                        <td class="LOGOE"><img src="images/logosclubs/petitebeauce.jpeg" alt=""></td>
+                        <td class="SCORE"> 2 - 4 </td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt=""></td>
+                        <td class="E2">US VENDOME</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">21/10/23 18h00</td>
+                        <td class="E1">US VENDOME</td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt=""></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/soings.jpeg" alt=""></td>
+                        <td class="E2">SOINGS AS</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">04/11/23 18h30</td>
+                        <td class="E1">CA ST LAURENT LA FERTE</td>
+                        <td class="LOGOE"><img src="images/logosclubs/stlaurent.jpeg" alt=""></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt=""></td>
+                        <td class="E2">US VENDOME</td>
+                    </tr>
+
+                    <tr>
+                        <td class="DATE">11/11/23 18h00</td>
+                        <td class="E1">US VENDOME</td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/ChausséeASJ.jpeg" alt="logo eq2"></td>
+                        <td class="E2">CHAUSSEE ASJ</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">25/11/23 18h30</td>
+                        <td class="E1">ORCHAISE ASL</td>
+                        <td class="LOGOE"><img src="images/logosclubs/orchaise.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq2"></td>
+                        <td class="E2">US VENDOME</td>
+                    </tr>
+
+                    <tr>
+                        <td class="DATE">02/12/23 18h00</td>
+                        <td class="E1">US VENDOME</td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/stgeorges.jpeg" alt="logo eq2"></td>
+                        <td class="E2">ST GEORGES US</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">16/12/23 18h00</td>
+                        <td class="E1">US VENDOME</td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/villeauxclercs.jpeg" alt="logo eq2"></td>
+                        <td class="E2">LA VILLES AUX CLERCS</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">13/01/24 18h30</td>
+                        <td class="E1">SOUESMES SS</td>
+                        <td class="LOGOE"><img src="images/logosclubs/souesme.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq2"></td>
+                        <td class="E2">US VENDOME</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">20/01/24 19h00</td>
+                        <td class="E1">CSF</td>
+                        <td class="LOGOE"><img src="images/logosclubs/csf.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq2"></td>
+                        <td class="E2">US VENDOME</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">03/02/24 18h00</td>
+                        <td class="E1">US VENDOME</td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/bloisasc.jpeg" alt="logo eq2"></td>
+                        <td class="E2">BLOIS ASC PORTUGAIS</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">17/02/24 18h30</td>
+                        <td class="E1">ETS VILLEBAROU</td>
+                        <td class="LOGOE"><img src="images/logosclubs/villebarou.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq2"></td>
+                        <td class="E2">US VENDOME</td>
+                    </tr>
+
+                    <tr>
+                        <td class="DATE">24/02/24 18h00</td>
+                        <td class="E1">US VENDOME</td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/petitebeauce.jpeg" alt="logo eq2"></td>
+                        <td class="E2">US PETITE BEAUCE</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">09/03/24 18h30</td>
+                        <td class="E1">SOINGS AS</td>
+                        <td class="LOGOE"><img src="images/logosclubs/soings.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq2"></td>
+                        <td class="E2">US VENDOME</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">16/03/24 18h00</td>
+                        <td class="E1">US VENDOME</td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/stlaurent.jpeg" alt="logo eq2"></td>
+                        <td class="E2">CA ST LAURENT LA FERTE</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">23/03/24 18h30</td>
+                        <td class="E1">CHAUSSE ASJ</td>
+                        <td class="LOGOE"><img src="images/logosclubs/ChausséeASJ.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq2"></td>
+                        <td class="E2">US VENDOME</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">06/04/24 18h00</td>
+                        <td class="E1">US VENDOME</td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/orchaise.jpeg" alt="logo eq2"></td>
+                        <td class="E2">ORCHAISE</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">14/04/24 15h00</td>
+                        <td class="E1">ST GEORGES US</td>
+                        <td class="LOGOE"><img src="images/logosclubs/stgeorges.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq2"></td>
+                        <td class="E2">US VENDOME</td>
+                    </tr>
+
+                    <tr>
+                        <td class="DATE">20/04/24 18h00</td>
+                        <td class="E1">US VENDOME</td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/souesme.jpeg" alt="logo eq2"></td>
+                        <td class="E2">SOUESMES SS</td>
+                    </tr>
+
+                    <tr>
+                        <td class="DATE">04/05/24 18h00</td>
+                        <td class="E1">US VENDOME</td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/csf.jpeg" alt="logo eq2"></td>
+                        <td class="E2">CSF</td>
+                    </tr>
+                    <tr>
+                        <td class="DATE">19/05/24 15h00</td>
+                        <td class="E1">LA VILLE AUX CLERCS</td>
+                        <td class="LOGOE"><img src="images/logosclubs/villeauxclercs.jpeg" alt="logo eq1"></td>
+                        <td class="SCORE"> - </td>
+                        <td class="LOGOE"><img src="images/logosclubs/usv.jpeg" alt="logo eq2"></td>
+                        <td class="E2">US VENDOME</td>
+                    </tr>
+
+
+                    <!-- ... Ajoutez les 26 autres lignes ici ... -->
+                </tbody>
+            </table>
+            <div class="calcomplet">
+                <a href="https://loir-et-cher.fff.fr/competitions?tab=calendar&id=412289&phase=1&poule=1&type=ch"
+                    target="_blank">
+                    <h1 class="heading"> <span>Calendrier </span>complet </h1>
+                </a>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- calendrier / résultats section ends  -->
+
+    <!-- classement  section starts -->
+
+    <section class="classement" id="classement">
+        <h1 class="heading"><span>Classement</span> SENIORS 1 D1 </h1>
+        <div class="containerclassement">
+            <table>
+                <thead>
+                </thead>
+                <tbody>
+                    <!-- Répétez cette ligne pour chaque résultat -->
+                    <tr>
+                        <td class="PLACE"></td>
+                        <td class="E1">EQUIPE</td>
+                        <td class="POINTS">PTS
+                        </td>
+                        <td class="JOUES">JOUES</td>
+                        <td class="GAGNE">GAGNE</td>
+                        <td class="NUL">NUL</td>
+                        <td class="PERDU">PERDU</td>
+                        <td class="BP">BP</td>
+                        <td class="BC">BC</td>
+                        <td class="DIF">DIF</td>
+                    <tr>
+                        <!-- 1ère place -->
+                        <td class="PLACE"> 1 </td>
+                        <td>
+                            <div class="eqp">
+                                <div class="nomeqp">
+                                    US VENDOME
+                                </div>
+                                <div class="logoeqp">
+                                    <img src="images/logosclubs/usv.jpeg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="POINTS"> 9 </td>
+                        <td class="JOUES"> 3 </td>
+                        <td class="GAGNE"> 3 </td>
+                        <td class="NUL"> 0 </td>
+                        <td class="PERDU"> 0 </td>
+                        <td class="BP"> 11 </td>
+                        <td class="BC"> 4 </td>
+                        <td class="DIF"> 7 </td>
+                    <tr>
+                        <!-- -->
+                        <td class="PLACE"> 2 </td>
+                        <td>
+                            <div class="eqp">
+                                <div class="nomeqp">US PETITE BEAUCE
+                                </div>
+                                <div class="logoeqp">
+                                    <img src="images/logosclubs/petitebeauce.jpeg" alt="">
+                                </div>
+                            </div>
+                        </td>
+
+                        <td class="POINTS"> 6 </td>
+                        <td class="JOUES"> 3 </td>
+                        <td class="GAGNE"> 2 </td>
+                        <td class="NUL"> 0 </td>
+                        <td class="PERDU"> 1 </td>
+
+                        <td class="BP"> 10 </td>
+                        <td class="BC"> 5 </td>
+                        <td class="DIF"> 5 </td>
+                    <tr>
+                        <td class="PLACE"> 3 </td>
+                        <td>
+                            <div class="eqp">
+                                <div class="nomeqp">
+                                    <span>CA SAINT LAURENT LA FERTE</span>
+                                </div>
+                                <div class="logoeqp">
+                                    <img src="images/logosclubs/stlaurent.jpeg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="POINTS"> 6 </td>
+                        <td class="JOUES"> 2 </td>
+                        <td class="GAGNE"> 2 </td>
+                        <td class="NUL"> 0 </td>
+                        <td class="PERDU"> 0 </td>
+                        <td class="BP"> 3 </td>
+                        <td class="BC"> 1 </td>
+                        <td class="DIF"> 2 </td>
+                    <tr>
+                        <td class="PLACE"> 4 </td>
+                        <td>
+                            <div class="eqp">
+                                <div class="nomeqp">
+                                    <span>ETS VILLEBAROU</span>
+                                </div>
+                                <div class="logoeqp">
+                                    <img src="images/logosclubs/villebarou.jpeg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="POINTS"> 6 </td>
+                        <td class="JOUES"> 3 </td>
+                        <td class="GAGNE"> 2 </td>
+                        <td class="NUL"> 0 </td>
+                        <td class="PERDU"> 1 </td>
+                        <td class="BP"> 5 </td>
+                        <td class="BC"> 4 </td>
+                        <td class="DIF"> 1 </td>
+                    <tr>
+                        <td class="PLACE"> 5 </td>
+                        <td>
+                            <div class="eqp">
+                                <div class="nomeqp">
+                                    <span>CSF</span>
+                                </div>
+                                <div class="logoeqp">
+                                    <img src="images/logosclubs/csf.jpeg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="POINTS"> 6 </td>
+                        <td class="JOUES"> 3 </td>
+                        <td class="GAGNE"> 1 </td>
+                        <td class="NUL"> 2 </td>
+                        <td class="PERDU"> 0 </td>
+                        <td class="BP"> 7 </td>
+                        <td class="BC"> 4 </td>
+                        <td class="DIF"> 3 </td>
+                    <tr>
+                        <td class="PLACE"> 6 </td>
+                        <td>
+                            <div class="eqp">
+                                <div class="nomeqp">
+                                    ORCHAISE ASL
+                                </div>
+                                <div class="logoeqp">
+                                    <img src="images/logosclubs/orchaise.jpeg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="POINTS"> 4 </td>
+                        <td class="JOUES"> 2 </td>
+                        <td class="GAGNE"> 1 </td>
+                        <td class="NUL"> 1 </td>
+                        <td class="PERDU"> 0 </td>
+                        <td class="BP"> 4 </td>
+                        <td class="BC"> 1 </td>
+                        <td class="DIF"> 3 </td>
+                    <tr>
+                        <td class="PLACE"> 7 </td>
+                        <td>
+                            <div class="eqp">
+                                <div class="nomeqp">
+                                    SOUESMES SS
+                                </div>
+                                <div class="logoeqp">
+                                    <img src="images/logosclubs/souesme.jpeg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="POINTS"> 3 </td>
+                        <td class="JOUES"> 3 </td>
+                        <td class="GAGNE"> 1 </td>
+                        <td class="NUL"> 0 </td>
+                        <td class="PERDU"> 2 </td>
+                        <td class="BP"> 4 </td>
+                        <td class="BC"> 7 </td>
+                        <td class="DIF"> -3 </td>
+                    <tr>
+                        <td class="PLACE"> 8 </td>
+                        <td>
+                            <div class="eqp">
+                                <div class="nomeqp">
+                                    CHAUSSE ASJ
+                                </div>
+                                <div class="logoeqp">
+                                    <img src="images/logosclubs/ChausséeASJ.jpeg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="POINTS"> 3 </td>
+                        <td class="JOUES"> 3 </td>
+                        <td class="GAGNE"> 1 </td>
+                        <td class="NUL"> 0 </td>
+                        <td class="PERDU"> 2 </td>
+                        <td class="BP"> 4 </td>
+                        <td class="BC"> 8 </td>
+                        <td class="DIF"> -4 </td>
+                    <tr>
+                        <td class="PLACE"> 9 </td>
+                        <td>
+                            <div class="eqp">
+                                <div class="nomeqp">
+                                    ST GEORGES US
+                                </div>
+                                <div class="logoeqp">
+                                    <img src="images/logosclubs/stgeorges.jpeg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="POINTS"> 3 </td>
+                        <td class="JOUES"> 3 </td>
+                        <td class="GAGNE"> 1 </td>
+                        <td class="NUL"> 0 </td>
+                        <td class="PERDU"> 2 </td>
+                        <td class="BP"> 5 </td>
+                        <td class="BC"> 6 </td>
+                        <td class="DIF"> -1 </td>
+                    <tr>
+                        <td class="PLACE"> 10 </td>
+                        <td>
+                            <div class="eqp">
+                                <div class="nomeqp">
+                                    SOINGS AS
+                                </div>
+                                <div class="logoeqp">
+                                    <img src="images/logosclubs/soings.jpeg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="POINTS"> 3 </td>
+                        <td class="JOUES"> 3 </td>
+                        <td class="GAGNE"> 1 </td>
+                        <td class="NUL"> 0 </td>
+                        <td class="PERDU"> 2 </td>
+                        <td class="BP"> 4 </td>
+                        <td class="BC"> 8 </td>
+                        <td class="DIF"> -4 </td>
+                    <tr>
+                        <td class="PLACE"> 11 </td>
+                        <td>
+                            <div class="eqp">
+                                <div class="nomeqp">
+                                    BLOIS ASC PORTUGAIS
+                                </div>
+                                <div class="logoeqp">
+                                    <img src="images/logosclubs/bloisasc.jpeg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="POINTS"> 1 </td>
+                        <td class="JOUES"> 3 </td>
+                        <td class="GAGNE"> 0 </td>
+                        <td class="NUL"> 1 </td>
+                        <td class="PERDU"> 2 </td>
+                        <td class="BP"> 6 </td>
+                        <td class="BC"> 10 </td>
+                        <td class="DIF"> -4 </td>
+                    <tr>
+                        <td class="PLACE"> 12 </td>
+                        <td>
+                            <div class="eqp">
+                                <div class="nomeqp">
+                                    LA VILLE AUX CLERCS
+                                </div>
+                                <div class="logoeqp">
+                                    <img src="images/logosclubs/villeauxclercs.jpeg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="POINTS"> 0 </td>
+                        <td class="JOUES"> 3 </td>
+                        <td class="GAGNE"> 0 </td>
+                        <td class="NUL"> 0 </td>
+                        <td class="PERDU"> 3 </td>
+                        <td class="BP"> 2 </td>
+                        <td class="BC"> 7 </td>
+                        <td class="DIF"> -5 </td>
+
+                        <!-- ... Ajoutez les 26 autres lignes ici ... -->
+                </tbody>
+            </table>
+            <div class="calcomplet">
+                <a href="https://foot-centre.fff.fr/competitions?tab=ranking&id=410853&phase=1&poule=1&type=ch"
+                    target="_blank">
+                    <h1 class="heading"> <span>Classement</span> complet </h1>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- classement section ends -->
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="social">
+            <a href="https://www.facebook.com/usvendomefoot/" target="_blank" class="fab fa-facebook-f"></a>
+            <a href="https://www.instagram.com/usvendomefoot/" target="_blank" class="fab fa-instagram"></a>
+        </div>
+
+        <div class="links">
+            <a href="index.html">ACCUEIL</a>
+            <a href="#calendrierresultats">CALENDRIER / RESULTATS</a>
+            <a href="#classement">CLASSEMENT</a>
+            <a href="#convocationsseniors1">CONVOCATIONS</a>
+            <a href="https://www.ekinsport.com" target="_blank">BOUTIQUE</a>
+        </div>
+
+        <div class="credit">created by <span>JC</span> | all rights reserved</div>
+
+    </section>
+    <!-- accueil section starts  -->
+
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
